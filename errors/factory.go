@@ -1,6 +1,5 @@
 package errors
 
-// Infrastructure Errors
 func NewInfrastructureError(code ErrorCode, message string, details ...map[string]interface{}) LayerError {
 	var d map[string]interface{}
 	if len(details) > 0 {
@@ -15,7 +14,6 @@ func NewInfrastructureError(code ErrorCode, message string, details ...map[strin
 	}
 }
 
-// Application Errors
 func NewApplicationError(code ErrorCode, errType ErrorType, message string, details ...map[string]interface{}) LayerError {
 	var d map[string]interface{}
 	if len(details) > 0 {
@@ -30,7 +28,6 @@ func NewApplicationError(code ErrorCode, errType ErrorType, message string, deta
 	}
 }
 
-// Domain Errors
 func NewDomainError(code ErrorCode, errType ErrorType, message string, details ...map[string]interface{}) LayerError {
 	var d map[string]interface{}
 	if len(details) > 0 {
@@ -45,7 +42,6 @@ func NewDomainError(code ErrorCode, errType ErrorType, message string, details .
 	}
 }
 
-// Helpers para errores comunes
 func NewValidationError(code ErrorCode, message string, details ...map[string]interface{}) LayerError {
 	return NewApplicationError(code, ValidationError, message, details...)
 }

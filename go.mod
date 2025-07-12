@@ -1,4 +1,4 @@
-module github.com/Joel-Medina-Osornio/betmates_backend_core
+module github.com/betmates/core
 
 go 1.24
 

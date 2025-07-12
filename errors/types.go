@@ -1,6 +1,13 @@
 package errors
 
-// LayerError es la interfaz base para todos los errores de capa
+type LayerType string
+
+type ErrorType string
+
+type ErrorCode string
+
+// Only type definitions are kept. No concrete error codes or log levels.
+
 type LayerError interface {
 	error
 	Layer() LayerType
@@ -9,7 +16,6 @@ type LayerError interface {
 	Details() map[string]interface{}
 }
 
-// baseError implementa la interfaz LayerError
 type baseError struct {
 	layer   LayerType
 	code    ErrorCode
@@ -36,4 +42,16 @@ func (e *baseError) Type() ErrorType {
 
 func (e *baseError) Details() map[string]interface{} {
 	return e.details
+}
+
+func (l LayerType) String() string {
+	return string(l)
+}
+
+func (e ErrorType) String() string {
+	return string(e)
+}
+
+func (c ErrorCode) String() string {
+	return string(c)
 }
