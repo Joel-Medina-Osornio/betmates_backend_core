@@ -44,11 +44,11 @@ changelog:
       - Merge branch
 
 brews:
-  - name: betting-app-errors
-    homepage: "https://github.com/betting-app/errors"
+  - name: betmates-backend-core
+    homepage: "https://github.com/Joel-Medina-Osornio/betmates_backend_core"
     description: "A Go library for layered error handling with multi-protocol support"
     repository:
-      owner: betting-app
+      owner: Joel-Medina-Osornio
       name: homebrew-tap
     commit_author:
       name: goreleaser
@@ -56,8 +56,8 @@ brews:
 
 dockers:
   - image_templates:
-      - "ghcr.io/betting-app/errors:{{ .Version }}"
-      - "ghcr.io/betting-app/errors:latest"
+      - "ghcr.io/joel-medina-osornio/betmates-backend-core:{{ .Version }}"
+      - "ghcr.io/joel-medina-osornio/betmates-backend-core:latest"
     dockerfile: Dockerfile
     use: buildx
     build_flag_templates:

@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/betmates/core/errors"
+	"github.com/Joel-Medina-Osornio/betmates_backend_core/errors"
 )
 
 func TestDefaultHTTPErrorHandler_HandleHTTPError(t *testing.T) {

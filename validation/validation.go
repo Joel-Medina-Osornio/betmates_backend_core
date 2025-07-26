@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/betmates/core/errors"
+	"github.com/Joel-Medina-Osornio/betmates_backend_core/errors"
 )
 
 type ValidationOption func(field string, value any) errors.LayerError

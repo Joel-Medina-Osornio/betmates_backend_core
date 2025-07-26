@@ -3,7 +3,7 @@ package protocols
 import (
 	"net/http"
 
-	"github.com/betmates/core/errors"
+	"github.com/Joel-Medina-Osornio/betmates_backend_core/errors"
 )
 
 type DefaultHTTPErrorHandler struct {

@@ -1,6 +1,6 @@
 package protocols
 
-import "github.com/betmates/core/errors"
+import "github.com/Joel-Medina-Osornio/betmates_backend_core/errors"
 
 type ProtocolHandler interface {
 	HandleError(err errors.LayerError) ProtocolResponse

@@ -1,9 +1,9 @@
 # Betmates Core Library
 
 [![Go Version](https://img.shields.io/badge/go-1.24+-blue.svg)](https://golang.org)
-[![Go Report Card](https://goreportcard.com/badge/github.com/betmates/core)](https://goreportcard.com/report/github.com/betmates/core)
-[![GoDoc](https://godoc.org/github.com/betmates/core?status.svg)](https://godoc.org/github.com/betmates/core)
-[![Test Coverage](https://img.shields.io/badge/coverage-95%25-green.svg)](https://gocover.io/github.com/betmates/core)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Joel-Medina-Osornio/betmates_backend_core)](https://goreportcard.com/report/github.com/Joel-Medina-Osornio/betmates_backend_core)
+[![GoDoc](https://godoc.org/github.com/Joel-Medina-Osornio/betmates_backend_core?status.svg)](https://godoc.org/github.com/Joel-Medina-Osornio/betmates_backend_core)
+[![Test Coverage](https://img.shields.io/badge/coverage-95%25-green.svg)](https://gocover.io/github.com/Joel-Medina-Osornio/betmates_backend_core)
 
 A comprehensive error handling and validation library for Go microservices, providing advanced error management with validation and multi-protocol support.
 
@@ -19,7 +19,7 @@ A comprehensive error handling and validation library for Go microservices, prov
 ## 📦 Installation
 
 ```bash
-go get github.com/betmates/core
+go get github.com/Joel-Medina-Osornio/betmates_backend_core
 ```
 
 ## 🛠️ Quick Start
@@ -27,7 +27,7 @@ go get github.com/betmates/core
 ### Basic Error Creation
 
 ```go
-import "github.com/betmates/core/errors"
+import "github.com/Joel-Medina-Osornio/betmates_backend_core/errors"
 
 // Create a validation error (define your own error codes)
 err := errors.NewValidationError(
@@ -43,7 +43,7 @@ err := errors.NewValidationError(
 ### Advanced Validation (Functional Options API)
 
 ```go
-import "github.com/betmates/core/validation"
+import "github.com/Joel-Medina-Osornio/betmates_backend_core/validation"
 
 err := validation.Validate(
     validation.Field("email", email, validation.Required(), validation.Email()),
@@ -60,7 +60,7 @@ err := validation.Validate(
 ### Protocol Error Handling
 
 ```go
-import "github.com/betmates/core/protocols"
+import "github.com/Joel-Medina-Osornio/betmates_backend_core/protocols"
 
 // Use default HTTP handler
 handler := protocols.NewDefaultHTTPErrorHandler()
